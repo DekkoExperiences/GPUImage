@@ -6,13 +6,14 @@
 
 extern NSString *const kGPUImageVertexShaderString;
 extern NSString *const kGPUImagePassthroughFragmentShaderString;
+extern NSString *const kGPURedFragmentShaderString;
 
 struct GPUVector4 {
     GLfloat one;
     GLfloat two;
     GLfloat three;
     GLfloat four;
-};
+};  
 typedef struct GPUVector4 GPUVector4;
 
 struct GPUVector3 {

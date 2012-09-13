@@ -22,7 +22,7 @@
 		return nil;
     }
         
-    _contextQueue = dispatch_queue_create("com.sunsetlakesoftware.GPUImage.openGLESContextQueue", NULL);
+    _contextQueue = dispatch_get_main_queue(); //dispatch_queue_create("com.sunsetlakesoftware.GPUImage.openGLESContextQueue", NULL);
     shaderProgramCache = [[NSMutableDictionary alloc] init];
     
     return self;
@@ -142,16 +142,19 @@
 #pragma mark -
 #pragma mark Accessors
 
+extern "C" EAGLContext* GetContext();
+
 - (EAGLContext *)context;
 {
     if (_context == nil)
     {
-        _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        //_context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        _context = GetContext();
         NSAssert(_context != nil, @"Unable to create an OpenGL ES 2.0 context. The GPUImage framework requires OpenGL ES 2.0 support to work.");
         [EAGLContext setCurrentContext:_context];
         
         // Set up a few global settings for the image processing pipeline
-        glDisable(GL_DEPTH_TEST);
+//        glDisable(GL_DEPTH_TEST);
     }
     
     return _context;

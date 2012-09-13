@@ -177,7 +177,7 @@
 		BCB5E76514E208D700701302 /* GPUImageVideoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB5E76314E208D600701302 /* GPUImageVideoCamera.h */; };
 		BCB5E76614E208D700701302 /* GPUImageVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5E76414E208D600701302 /* GPUImageVideoCamera.m */; };
 		BCB5E76C14E20AD700701302 /* GPUImageOpenGLESContext.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB5E76A14E20AD700701302 /* GPUImageOpenGLESContext.h */; };
-		BCB5E76D14E20AD700701302 /* GPUImageOpenGLESContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5E76B14E20AD700701302 /* GPUImageOpenGLESContext.m */; };
+		BCB5E76D14E20AD700701302 /* GPUImageOpenGLESContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCB5E76B14E20AD700701302 /* GPUImageOpenGLESContext.mm */; };
 		BCB5E76F14E20B8000701302 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB5E76E14E20B7F00701302 /* UIKit.framework */; };
 		BCB5E77114E20B8A00701302 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB5E77014E20B8A00701302 /* AVFoundation.framework */; };
 		BCB5E77314E20B9100701302 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB5E77214E20B9100701302 /* QuartzCore.framework */; };
@@ -479,7 +479,7 @@
 		BCB5E76314E208D600701302 /* GPUImageVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageVideoCamera.h; path = Source/GPUImageVideoCamera.h; sourceTree = SOURCE_ROOT; };
 		BCB5E76414E208D600701302 /* GPUImageVideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageVideoCamera.m; path = Source/GPUImageVideoCamera.m; sourceTree = SOURCE_ROOT; };
 		BCB5E76A14E20AD700701302 /* GPUImageOpenGLESContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPUImageOpenGLESContext.h; path = Source/GPUImageOpenGLESContext.h; sourceTree = SOURCE_ROOT; };
-		BCB5E76B14E20AD700701302 /* GPUImageOpenGLESContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPUImageOpenGLESContext.m; path = Source/GPUImageOpenGLESContext.m; sourceTree = SOURCE_ROOT; };
+		BCB5E76B14E20AD700701302 /* GPUImageOpenGLESContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GPUImageOpenGLESContext.mm; path = Source/GPUImageOpenGLESContext.mm; sourceTree = SOURCE_ROOT; };
 		BCB5E76E14E20B7F00701302 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCB5E77014E20B8A00701302 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BCB5E77214E20B9100701302 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -1006,7 +1006,7 @@
 				BCB5E77D14E22E4200701302 /* GPUImageOutput.h */,
 				BCB5E77E14E22E4200701302 /* GPUImageOutput.m */,
 				BCB5E76A14E20AD700701302 /* GPUImageOpenGLESContext.h */,
-				BCB5E76B14E20AD700701302 /* GPUImageOpenGLESContext.m */,
+				BCB5E76B14E20AD700701302 /* GPUImageOpenGLESContext.mm */,
 				BCB5E78114E232BC00701302 /* Sources */,
 				0D6948871501F56600206FF8 /* Pipeline */,
 				BC245DC314DDBE6B009FE7EB /* Filters */,
@@ -1305,7 +1305,7 @@
 				BC245DCB14DDBED7009FE7EB /* GPUImageFilter.m in Sources */,
 				BCB5E75D14E2086300701302 /* GPUImageView.m in Sources */,
 				BCB5E76614E208D700701302 /* GPUImageVideoCamera.m in Sources */,
-				BCB5E76D14E20AD700701302 /* GPUImageOpenGLESContext.m in Sources */,
+				BCB5E76D14E20AD700701302 /* GPUImageOpenGLESContext.mm in Sources */,
 				BCB5E78014E22E4300701302 /* GPUImageOutput.m in Sources */,
 				BCB5E79514E3275200701302 /* GLProgram.m in Sources */,
 				BCB5E7C314E4B6D400701302 /* GPUImageSepiaFilter.m in Sources */,

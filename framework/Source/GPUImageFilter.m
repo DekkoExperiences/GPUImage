@@ -29,6 +29,18 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
  }
 );
 
+NSString *const kGPURedFragmentShaderString = SHADER_STRING
+(
+ varying highp vec2 textureCoordinate;
+ 
+ uniform sampler2D inputImageTexture;
+ 
+ void main()
+ {
+     gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+ }
+ );
+
 void dataProviderReleaseCallback (void *info, const void *data, size_t size);
 void dataProviderUnlockCallback (void *info, const void *data, size_t size);
 
